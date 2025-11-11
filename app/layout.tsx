@@ -23,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={cn(jetBrainsMono.variable)}>
+    <html lang="en" className="h-full w-full scroll-smooth">
+      <body className={cn(jetBrainsMono.variable, "h-full w-full")}>
         <Header />
         <StairTransition />
         <PageTransition>{children}</PageTransition>
